@@ -1,0 +1,8 @@
+def calculate_loyalty_points(total_transaction, member_status):
+    if member_status == False:
+        return 0
+    
+    point = total_transaction // 20000
+    return point
+    
+print(f"Congratulations! You got {calculate_loyalty_points(45000, True)} Point")
