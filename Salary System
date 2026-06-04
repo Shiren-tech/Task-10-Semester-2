@@ -1,0 +1,9 @@
+def calculate_overtime_salary(base_salary, total_hours_worked):
+    total =  total_hours_worked <= 40
+    if total_hours_worked  > 40:
+        salary = total_hours_worked - 40
+        total = salary * 50000
+        return base_salary + total
+    return base_salary
+
+print(f"Total salary this months: Rp{calculate_overtime_salary(5000000, 45)}")
