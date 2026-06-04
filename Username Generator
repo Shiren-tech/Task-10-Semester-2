@@ -1,0 +1,6 @@
+def create_username(full_name, birth_year):
+    front_name = full_name.split()[0].lower()
+    ujung_tahun = str(birth_year)[-2:]
+    return front_name + ujung_tahun
+
+print(f"So your password will be: {create_username("Budi Santoso", "1998")}")
