@@ -1,0 +1,7 @@
+def convert_minutes(number_of_episodes, duration_per_episode):
+    total_minutes = number_of_episodes * duration_per_episode
+    hours = total_minutes // 60
+    minutes = total_minutes % 60
+    return(hours, minutes)
+hours, minutes = convert_minutes(5, 45)
+print(hours, "Hours", minutes, "Minutes")
