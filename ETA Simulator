@@ -1,0 +1,7 @@
+def estimate_arrival(distance_km, weather_condition):
+    estimate_total = distance_km * 3
+    if weather_condition.lower() == "rainy":
+        estimate_total = estimate_total + 10
+        return estimate_total
+    
+print(f"The time you have traveled: {estimate_arrival(10, "rainy")} Minutes")
