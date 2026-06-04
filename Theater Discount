@@ -1,0 +1,6 @@
+def check_discount(total_price, ticket_quantity, coupon_code):
+    if coupon_code == "NONTONSERU" and ticket_quantity >= 2:
+        price = total_price - 15000
+    return price
+
+print(f"Total you should pay: Rp{check_discount(100000, 2, "NONTONSERU")}")
