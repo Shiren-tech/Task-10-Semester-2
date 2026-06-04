@@ -1,0 +1,8 @@
+def validate_tweet(input_text):
+   if len(input_text) <= 140:
+        return input_text
+   else:
+        text = input_text[:140] + ". . ."
+        return text
+       
+print(validate_tweet("Hello word!"))
