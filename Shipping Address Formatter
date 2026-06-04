@@ -1,0 +1,4 @@
+def format_address(street, city, province, postal_code):
+    return (f"street: {street} city: {city}, {province}, {postal_code}")
+
+print(format_address("Jln merdeka No 19", "Sukabumi", "Jawa Barat", "43145"))
